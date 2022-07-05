@@ -1,0 +1,38 @@
+mutation edit($editMenu: MenuInput!) {
+  editMenu(menuInput: $editMenu) {
+    id
+    name
+    icon
+    slug
+    styles
+    display
+    enableSty
+    order
+    slugRoot
+    slugRelative
+    menu {
+      id
+      name
+      icon
+      slug
+      styles
+      display
+      enableSty
+      order
+      slugRoot
+      slugRelative
+      menu {
+        id
+        name
+        icon
+        slug
+        styles
+        display
+        enableSty
+        order
+        slugRoot
+        slugRelative
+      }
+    }
+  }
+}
